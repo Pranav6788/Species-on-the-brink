@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
+    <title>SOTB - Donate</title>
+</head>
+<body class="bg-black">
+    <div class="fixed p-3 flex w-full top-0 left-0 z-20 bg-white">
+        <div class="justify-start">
+            <button class="text-gray-1000 py-4 px-5 shadow-large hover:bg-gray-900 hover:text-gray-300 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div id="menuBar" class="flex w-full">
+            <a href="main.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Home</a>
+            <a href="extinct.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Extinct</a>
+            <a href="map.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Explore</a>
+            <a href="blog.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Blog</a>
+            <a href="quiz.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Quiz</a>
+            <a href="donate.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Donate</a>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 pt-24">
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-xl p-8 mt-10">
+            <h1 class="text-4xl font-bold mb-8 text-center">Support Our Cause</h1>
+
+            <form class="space-y-8">
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-bold mb-4">Your Gift Information</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block mb-2"></label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <button type="button" 
+                                        onclick="selectGiftType('oneTime')" 
+                                        class="gift-type-btn p-4 border rounded-lg text-center hover:bg-red-50 hover:border-red-500 active">
+                                    One-time Gift
+                                </button>
+                                <button type="button" 
+                                        onclick="selectGiftType('monthly')" 
+                                        class="gift-type-btn p-4 border rounded-lg text-center hover:bg-red-50 hover:border-red-500">
+                                    Monthly Gift
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block mb-2">Select Amount:</label>
+                            <div class="grid grid-cols-3 gap-4">
+                                <button type="button" 
+                                        onclick="selectAmount(35)" 
+                                        class="amount-btn p-4 border rounded-lg hover:bg-red-50 hover:border-red-500"
+                                        data-amount="35">
+                                    Rs. 50
+                                </button>
+                                <button type="button" 
+                                        onclick="selectAmount(50)" 
+                                        class="amount-btn p-4 border rounded-lg hover:bg-red-50 hover:border-red-500"
+                                        data-amount="50">
+                                    Rs. 100
+                                </button>
+                                <button type="button" 
+                                        onclick="selectAmount(100)" 
+                                        class="amount-btn p-4 border rounded-lg hover:bg-red-50 hover:border-red-500"
+                                        data-amount="100">
+                                    Rs. 500
+                                </button>
+                                <button type="button" 
+                                        onclick="selectAmount(250)" 
+                                        class="amount-btn p-4 border rounded-lg hover:bg-red-50 hover:border-red-500"
+                                        data-amount="250">
+                                    Rs. 1,000
+                                </button>
+                                <button type="button" 
+                                        onclick="selectAmount(1000)" 
+                                        class="amount-btn p-4 border rounded-lg hover:bg-red-50 hover:border-red-500"
+                                        data-amount="1000">
+                                    Rs. 10,000
+                                </button>
+                                <button type="button" 
+                                        onclick="showCustomAmount()" 
+                                        class="amount-btn p-4 border rounded-lg hover:bg-red-50 hover:border-red-500">
+                                    Other
+                                </button>
+                            </div>
+                            
+                            <div id="custom-amount" class="hidden mt-4">
+                                <label class="block mb-2">Enter Amount:</label>
+                                <div class="flex items-center">
+                                    <span class="text-xl mr-2">Rs.</span>
+                                    <input type="number" 
+                                           onchange="selectCustomAmount(this.value)"
+                                           class="w-full p-2 border rounded" 
+                                           placeholder="Enter amount">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-bold mb-4">Billing Information</h2>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block mb-2">First Name:</label>
+                                <input type="text" class="w-full p-2 border rounded" required>
+                            </div>
+                            <div>
+                                <label class="block mb-2">Last Name:</label>
+                                <input type="text" class="w-full p-2 border rounded" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Email:</label>
+                            <input type="email" class="w-full p-2 border rounded" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Phone Number:</label>
+                            <input type="tel" class="w-full p-2 border rounded" required>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block mb-2">Address:</label>
+                            <input type="text" placeholder="Street Address" class="w-full p-2 border rounded" required>
+                            <input type="text" placeholder="Apt, Suite, etc. (optional)" class="w-full p-2 border rounded">
+                        </div>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div>
+                                <label class="block mb-2">City:</label>
+                                <input type="text" class="w-full p-2 border rounded" required>
+                            </div>
+                            <div>
+                                <label class="block mb-2">State:</label>
+                                <select class="w-full p-2 border rounded" required>
+                                    <option value="">Select State</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block mb-2">Zip Code:</label>
+                                <input type="text" class="w-full p-2 border rounded" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-bold mb-4">Select Payment Method</h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <button type="button" onclick="showPaymentForm('card')" class="payment-btn p-4 border rounded-lg text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M3 10h18M7 15h.01M11 15h.01M15 15h.01M3 10l.343-3.428A2 2 0 015.31 5h13.38a2 2 0 011.967 1.572L21 10H3z"/>
+                            </svg>
+                            Credit Card
+                        </button>
+                        
+                        <button type="button" onclick="showPaymentForm('upi')" class="payment-btn p-4 border rounded-lg text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M12 4v16m0-16l-4 4m4-4l4 4"/>
+                            </svg>
+                            UPI
+                        </button>
+                        
+                        <button type="button" onclick="showPaymentForm('razorpay')" class="payment-btn p-4 border rounded-lg text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                            RazorPay
+                        </button>
+                    </div>
+
+                    <div id="payment-forms" class="mt-6">
+                        <div id="card-form" class="payment-form hidden space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block mb-2">Card Number</label>
+                                    <input type="text" class="w-full p-2 border rounded" maxlength="16" placeholder="1234 5678 9012 3456">
+                                </div>
+                                <div>
+                                    <label class="block mb-2">Name on Card</label>
+                                    <input type="text" class="w-full p-2 border rounded" placeholder="John Doe">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block mb-2">Expiry Date</label>
+                                    <input type="text" class="w-full p-2 border rounded" placeholder="MM/YY">
+                                </div>
+                                <div>
+                                    <label class="block mb-2">CVV</label>
+                                    <input type="password" class="w-full p-2 border rounded" maxlength="3" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="upi-form" class="payment-form hidden space-y-4">
+                            <div>
+                                <label class="block mb-2">UPI ID</label>
+                                <input type="text" class="w-full p-2 border rounded" placeholder="username@upi">
+                            </div>
+                            <button type="button" onclick="verifyUPI()" class="bg-green-500 text-white px-4 py-2 rounded">
+                                Verify UPI
+                            </button>
+                        </div>
+
+                        <div id="razorpay-form" class="payment-form hidden">
+                            <p class="mb-4">Click below to proceed with RazorPay payment gateway</p>
+                            <button type="button" onclick="initiateRazorpay()" class="w-full bg-blue-600 text-white py-3 rounded">
+                                Pay with RazorPay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="donate-btn" 
+                        type="button" 
+                        onclick="handleDonation()" 
+                        class="w-full bg-gray-400 text-white py-3 px-6 rounded-lg text-lg font-bold mt-8" 
+                        disabled>
+                    Complete Donation
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="map.js"></script>
+    <script>
+        let selectedGiftType = 'oneTime';
+        let selectedPaymentMethod = '';
+        let selectedAmount = 0;
+
+        function selectGiftType(type) {
+            selectedGiftType = type;
+            document.querySelectorAll('.gift-type-btn').forEach(btn => {
+                btn.classList.remove('bg-red-50', 'border-red-500');
+            });
+            event.currentTarget.classList.add('bg-red-50', 'border-red-500');
+        }
+
+        function showPaymentForm(type) {
+            selectedPaymentMethod = type;
+            document.querySelectorAll('.payment-form').forEach(form => {
+                form.classList.add('hidden');
+            });
+            
+            document.querySelectorAll('.payment-btn').forEach(btn => {
+                btn.classList.remove('border-red-500', 'bg-red-50');
+            });
+            
+            document.getElementById(`${type}-form`).classList.remove('hidden');
+            
+            event.currentTarget.classList.add('border-red-500', 'bg-red-50');
+            
+            document.getElementById('donate-btn').disabled = false;
+            document.getElementById('donate-btn').classList.remove('bg-gray-400');
+            document.getElementById('donate-btn').classList.add('bg-red-600', 'hover:bg-red-700');
+        }
+        
+        function verifyUPI() {
+            alert('UPI verification in progress...');
+        }
+
+        function handleDonation() {
+            if (selectedPaymentMethod === 'razorpay') {
+                initiateRazorpay();
+            } else {
+                document.querySelector('form').submit();
+            }
+        }
+
+        function initiateRazorpay() {
+            var options = {
+                key: 'YOUR_RAZORPAY_KEY',
+                amount: selectedAmount * 100,
+                currency: 'INR',
+                name: 'Species on the Brink',
+                description: `${selectedGiftType} Donation`,
+                handler: function(response) {
+                    alert('Payment Successful! Transaction ID: ' + response.razorpay_payment_id);
+                }
+            };
+            var rzp = new Razorpay(options);
+            rzp.open();
+        }
+
+        function selectAmount(amount) {
+            selectedAmount = amount;
+            
+            document.querySelectorAll('.amount-btn').forEach(btn => {
+                btn.classList.remove('bg-red-50', 'border-red-500');
+            });
+            event.currentTarget.classList.add('bg-red-50', 'border-red-500');
+            
+            document.getElementById('custom-amount').classList.add('hidden');
+            
+            updateDonateButton();
+        }
+
+        function showCustomAmount() {
+            document.querySelectorAll('.amount-btn').forEach(btn => {
+                btn.classList.remove('bg-red-50', 'border-red-500');
+            });
+            event.currentTarget.classList.add('bg-red-50', 'border-red-500');
+            
+            document.getElementById('custom-amount').classList.remove('hidden');
+            
+            selectedAmount = 0;
+            updateDonateButton();
+        }
+
+        function selectCustomAmount(value) {
+            selectedAmount = parseFloat(value);
+            updateDonateButton();
+        }
+
+        function updateDonateButton() {
+            const donateBtn = document.getElementById('donate-btn');
+            if (selectedAmount > 0) {
+                donateBtn.disabled = false;
+                donateBtn.classList.remove('bg-gray-400');
+                donateBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+            } else {
+                donateBtn.disabled = true;
+                donateBtn.classList.add('bg-gray-400');
+                donateBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+            }
+        }
+    </script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>SOTB - Quiz</title>
+</head>
+<body class="bg-white">
+    <div class="fixed p-3 flex w-full top-0 left-0 z-20">
+        <div class="justify-start">
+            <button class="text-gray-1000 py-4 px-5 shadow-large hover:bg-gray-900 hover:text-gray-300 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+        </div>
+        <div id="menuBar" class="flex w-full">
+            <a href="main.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Home</a>
+            <a href="extinct.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Extinct</a>
+            <a href="map.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Explore</a>
+            <a href="blog.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Blog</a>
+            <a href="quiz.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Quiz</a>
+            <a href="donate.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Donate</a>
+        </div>
+    </div>
+
+    <div id="quiz-container" class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-8 pt-16">Personality Quiz: Discover Your Extinct Species</h2>
+
+        <div id="quiz-questions" class="space-y-8 pt-8">
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">1. How do you approach challenges?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q1" value="a" class="mr-3"> With patience and strategy – I take my time to think things through.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q1" value="b" class="mr-3"> Boldly and fearlessly – I'm ready to dive in headfirst!
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q1" value="c" class="mr-3"> I like to blend in and adapt based on the situation.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q1" value="d" class="mr-3"> I prefer to work as part of a group and tackle problems together.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">2. What's your ideal environment?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q2" value="a" class="mr-3"> A peaceful, quiet place where I can think and reflect.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q2" value="b" class="mr-3"> A wild, untamed place full of adventure and unpredictability.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q2" value="c" class="mr-3"> A place that changes with the seasons – variety is the spice of life!
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q2" value="d" class="mr-3"> A community-oriented place where I can connect with others.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">3. How would your friends describe you?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q3" value="a" class="mr-3"> Wise and thoughtful – I always know what to say.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q3" value="b" class="mr-3"> Courageous and daring – I love a good challenge!
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q3" value="c" class="mr-3"> Mysterious and adaptable – I always seem to know how to blend in.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q3" value="d" class="mr-3"> Supportive and loyal – I’m always there when someone needs me.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">4. What’s your reaction when faced with a threat?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q4" value="a" class="mr-3"> Stay calm and assess the situation, then act carefully.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q4" value="b" class="mr-3"> Face it head-on, no hesitation.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q4" value="c" class="mr-3"> Hide and wait for the right moment to strike.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q4" value="d" class="mr-3"> Rally together with others to overcome the threat.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">5. How do you prefer to spend your free time?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q5" value="a" class="mr-3"> Solitary activities like reading, thinking, or reflecting.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q5" value="b" class="mr-3"> Exploring new places, trying new things, and seeking excitement.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q5" value="c" class="mr-3"> Observing the world around me, blending in with nature.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q5" value="d" class="mr-3"> Engaging in social activities, helping friends, and connecting with others.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">6. When you encounter a new group of people, how do you react?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q6" value="a" class="mr-3"> I prefer to observe quietly before jumping into the conversation.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q6" value="b" class="mr-3"> I jump right in and introduce myself with enthusiasm.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q6" value="c" class="mr-3"> I wait to see how the group is behaving before deciding how to engage.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q6" value="d" class="mr-3"> I look for ways to connect with people and form friendships quickly.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">7. How do you feel about working in teams?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q7" value="a" class="mr-3"> I enjoy contributing in my own way, but I like to work mostly on my own.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q7" value="b" class="mr-3"> I love the idea of leading the team and taking charge of the action!
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q7" value="c" class="mr-3"> I prefer to observe and let others take the lead while I support them.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q7" value="d" class="mr-3"> I thrive in team settings, offering help wherever needed and keeping everyone together.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">8. If you were in a dangerous situation, what would be your first instinct?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q8" value="a" class="mr-3"> Try to think of a clever, safe escape route.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q8" value="b" class="mr-3"> Charge forward and face the danger directly.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q8" value="c" class="mr-3"> Find a way to blend in or hide until the danger passes.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q8" value="d" class="mr-3"> Call for help or gather others to tackle the situation together.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">9. How do you handle change?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q9" value="a" class="mr-3"> I approach it slowly, thinking about all the possible outcomes.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q9" value="b" class="mr-3"> I embrace it and dive in headfirst, eager to see what happens.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q9" value="c" class="mr-3"> I adapt quickly, adjusting to new circumstances as they come.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q9" value="d" class="mr-3"> I try to involve my friends and family to make the transition easier.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">10. If you had to describe your ideal day, what would it look like?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q10" value="a" class="mr-3"> A quiet day filled with reflection, reading, and peace.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q10" value="b" class="mr-3"> A day packed with exciting adventures, exploring new places.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q10" value="c" class="mr-3"> A relaxed day, observing the world and experiencing nature.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q10" value="d" class="mr-3"> A day spent with close friends or family, working together on a project or simply enjoying each other’s company.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">11. How do you react when you feel threatened?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q11" value="a" class="mr-3"> I remain calm, calculating my next move carefully.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q11" value="b" class="mr-3"> I take immediate action to defend myself.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q11" value="c" class="mr-3"> I prefer to retreat and find safety first.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q11" value="d" class="mr-3"> I stand my ground and protect those around me.
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="text-xl font-semibold py-8">12. How do you prefer to communicate?</p>
+                <div class="flex flex-col space-y-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="q12" value="a" class="mr-3"> Through thoughtful, measured words that show care and wisdom.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q12" value="b" class="mr-3"> Through bold actions and clear statements, letting my presence be known.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q12" value="c" class="mr-3"> Through subtle signals and gestures, allowing others to pick up on what I mean.
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="q12" value="d" class="mr-3"> Through direct conversations, ensuring everyone understands and feels included.
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

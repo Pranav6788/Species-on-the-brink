@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>SOTB - Home</title>
+</head>
+<body>
+    <div class="fixed p-3 flex w-full top-0 left-0 z-20">
+        <div class="justify-start">
+            <button class="text-gray-1000 py-4 px-5 shadow-large hover:bg-gray-900 hover:text-gray-300 hover:font-bold rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+        </div>
+        <div id="menuBar" class="flex w-full">
+            <a href="main.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Home</a>
+            <a href="extinct.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Extinct</a>
+            <a href="map.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Explore</a>
+            <a href="blog.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Blog</a>
+            <a href="quiz.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Quiz</a>
+            <a href="donate.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Donate</a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="page-name-text" class="bg-red-600 h-[100vh] w-full">
+            <h1 class="font-bold text-[22vh]/[11vw] pt-40 pl-10">SPECIES</h1>
+            <h1 class="font-bold text-[22vh]/[11vw] pl-10">ON THE BRINK </h1>
+        </div>
+
+        <div class="relative justify-center">
+            <div class="absolute top-[30vh] w-[100vw]">
+                <div class="flex flex-col justify-center items-center">
+                    <h2 class="text-white text-[30px] p-10">EXPLORE EXTINCT SPECIES</h2>
+                    <i class="text-white text-[15px] w-[50%]">
+                        "Step into the past and uncover the mysteries of extinct species. 
+                        Explore the fascinating world of animals, plants, and ecosystems 
+                        that once roamed the Earth but no longer exist. Discover the stories 
+                        behind their extinction, the factors that led to their disappearance,
+                        and the lessons we can learn to protect the species that remain. 
+                        Join us on a journey through time to understand the biodiversity of 
+                        our planet and the importance of preserving life for future 
+                        generations."
+                    </i>
+                    <a href="extinct.html" class="text-yellow-300 z-20 underline p-10">Explore Now</a>
+                </div>
+            </div>
+            <video autoplay loop muted class="w-[100vw] m-auto mt-5">
+                <source src="backgroundvid.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+
+        <div id="whale-page" class="relative text-white h-[85vh] bg-black">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-4xl text-yellow-300 pt-16 pb-4">Our Blog</h1>
+                <hr class="w-[10vw]">
+            </div>
+            <div id="whale-info" class="flex mx-7 my-[10px] justify-center">
+                <div class="flex justify-center">
+                    <div class="slider-container1">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <!-- <img class="img1" src="images/jaguar.jpg" alt="" loading="lazy"> -->
+                                        <a href="blog.html">
+                                            <div class="lposts cards">
+                                                <img src="https://images.ctfassets.net/tftu3vbfu92u/1JqsYHPHVum5uW5cQebTT2/a65b29d7442d22ab314ed934af01b65f/5x4_starrynightoad.jpg?q=75&&w=1024&fm=webp" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="container">
+                                        <h1>What happens after a lost species is <br>rediscovered? First, we celebrate. <br>Then we get to work.</h1>
+                                    </div>
+                                </div>
+                              
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <!-- <img class="img1" src="images/jaguar.jpg" alt="" loading="lazy"> -->
+                                        <a href="blog.html">
+                                            <div class="lposts cards">
+                                                <img src="https://images.pexels.com/photos/2747248/pexels-photo-2747248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="container">
+                                        <h1>Sharks: Predators or Protectors?</h1>
+                                    </div>
+                                </div>
+                    
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <!-- <img class="img1" src="images/jaguar.jpg" alt="" loading="lazy"> -->
+                                        <a href="blog.html">
+                                            <div class="lposts cards">
+                                                <img src="https://images.pexels.com/photos/1096299/pexels-photo-1096299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="container">
+                                        <h1>Rediscovering the Holy Grail <br>of New Zealand moths</h1>
+                                    </div>
+                                </div>
+                
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <!-- <img class="img1" src="images/jaguar.jpg" alt="" loading="lazy"> -->
+                                        <a href="blog.html">
+                                            <div class="lposts cards">
+                                                <img src="https://thewildlife.blog/wp-content/uploads/2025/01/fish-7910906_1280.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="container">
+                                        <h1>The “Sustainability” Problem</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+
+
+        <div id="gecko-page" class="relative text-white h-[60vh] w-full">
+            <div id="gecko-info" class="absolute p-10 w-full">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-4xl text-yellow-300 pt-16 pb-4">Personality Quiz</h1>
+                    <hr class="w-[10vw]">
+                </div>
+                <div class="flex w-full justify-center items-center pt-16">
+                    <p class="w-[50vw]">
+                        Ever wondered which extinct species most aligns with your 
+                        personality? Take this fun quiz to discover your ancient 
+                        counterpart and learn what traits you share with creatures 
+                        from Earth's past! Ready? Let’s go!
+                    </p>
+                </div>
+                <div class="flex justify-center items-center p-10">
+                    <a href="quiz.html">
+                        <button class="bg-white text-black w-[100px] h-10 hover:bg-yellow-300">Take Quiz</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="news-page" class="relative text-white h-[75vh] w-full">
+            <div id="current-news-header">
+                <h1 id="current-news" class="text-7xl ml-20 pb-10">Gallery.</h1>
+            </div>
+            <div id="news-swiperdiv" class="relative h-[60vh]">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex">
+                            <img class="block object-cover w-[20vw]" src="pexels-aemyr-sahli-154798633-30582702.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide flex">
+                            <img class="block object-cover w-[20vw]" src="pexels-adrien-stachowiak-170983955-30567049.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide flex">
+                            <img class="block object-cover w-[20vw]" src="pexels-itsthenmp-30542345.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide flex">
+                            <img class="block object-cover w-[20vw]" src="navimgs4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide flex">
+                            <img class="block object-cover w-[20vw]" src="pexels-mnannapaneni-30548043.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide flex">
+                            <img class="block object-cover w-[20vw]" src="pexels-serjosoza-30564822.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide flex">
+                            <img class="block object-cover w-[20vw]" src="pexels-janani-pugalendhi-2149061124-30409413.jpg" alt="">  
+                        </div>
+                        <div class="swiper-slide flex">
+                            <img class="block object-cover w-[20vw]" src="images/NAcalf.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gecko-page" class="relative text-white h-[90vh] w-full">
+            <div id="gecko-info" class="absolute p-10 w-full">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-4xl text-yellow-300 pt-16 pb-4">Support Our Cause</h1>
+                    <hr class="w-[10vw]">
+                </div>
+                <div class="flex justify-center items-center w-full pt-16">
+                    <div class="flex flex-col justify-center items-center w-[50vw]">
+                        <p>
+                            Join us in making a difference! Whether it’s protecting 
+                            endangered species, conserving our natural environment, or 
+                            preserving the incredible biodiversity of our planet, your 
+                            support matters. Together, we can help ensure a brighter future 
+                            for our world and the species we share it with.
+                        </p>
+    
+                        <p><br><br>How can you help?<br><br></p>
+    
+                        <p><b>Spread Awareness:</b> Share the cause and educate others. <br><br></p>
+    
+                        <p><b>Donate:</b> Every contribution, big or small, makes an impact. <br><br></p>
+    
+                        <p><b>Volunteer: </b>Offer your time or skills to help us make a difference. <br><br></p>
+    
+                        <p><b>Advocate:</b> Stand up for the protection of our planet and its creatures. <br><br></p>
+    
+                        <p><b>Make Sustainable Choices:</b> Small actions can create big change.</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center p-10">
+                    <a href="donate.html">
+                        <button class="bg-white text-black w-[100px] h-10 hover:bg-yellow-300">Donate</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="socials-page" class="relative h-[20vh] flex flex-col justify-center items-center w-full bg-red-600">
+            <h1 class="text-2xl py-2">Follow Us</h1>
+            <div id="icons" class=" flex items-center">
+                <div id="insta" class="flex">
+                    <a href="https://www.instagram.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="50" viewBox="0 0 50 50">
+                            <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div id="facebook" class="flex ">
+                    <a href="https://www.facebook.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="50" viewBox="0 0 50 50">
+                            <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div id="x" class="flex " >
+                    <a href="https://www.x.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="50" viewBox="0 0 50 50">
+                            <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div id="copyrights" class="flex justify-center items-center mt-10">
+                <h2 class="font-30">© 2025 Species On The Brink. All content, images, and materials are protected by copyright law. Unauthorized use is prohibited.</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

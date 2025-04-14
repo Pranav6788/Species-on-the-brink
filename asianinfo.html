@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>Asian Endangered Species</title>
+</head>
+<body>
+    <div class="fixed p-3 flex w-full top-0 left-0 z-20">
+        <div class="justify-start">
+            <button class="text-gray-1000 py-4 px-5 shadow-large hover:bg-gray-900 hover:text-gray-300 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div id="menuBar" class="flex w-full">
+            <a href="main.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Home</a>
+            <a href="extinct.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Extinct</a>
+            <a href="map.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Explore</a>
+            <a href="blog.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Blog</a>
+            <a href="quiz.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Quiz</a>
+            <a href="donate.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Donate</a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="relative h-screen">
+            <img src="https://www.treehugger.com/thmb/7bpOwPNpDBsXhysX7793lflbPGk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tiger-bandhavgarh-np-india-01-7452a370026f452b88d973bd0d0eec9b.jpg" alt="Asian Wildlife" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <h1 class="text-6xl font-bold text-white mb-4">Asia's Most Endangered</h1>
+                <p class="text-2xl text-white">Discovering the continent's critically endangered species</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://tigers-world.com/wp-content/uploads/South_China_tiger.jpg" alt="South China Tiger" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">South China Tiger</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Possibly Extinct in Wild</p>
+                        <a href="#tiger" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/03/28092209/277549834_7633132220038138_3823976378619502631_n-768x512.jpg" alt="Sumatran Rhinoceros" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Sumatran Rhinoceros</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Less than 80</p>
+                        <a href="#rhino" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://earth.org/wp-content/uploads/2022/04/Untitled-design-2022-04-12T161151.368.jpg" alt="Vaquita" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Vaquita</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Less than 20</p>
+                        <a href="#vaquita" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://d1jyxxz9imt9yb.cloudfront.net/article/10883/meta_image/regular/_MG_7256_reduced.jpg" alt="Chinese Pangolin" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Chinese Pangolin</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Unknown, Rapidly Declining</p>
+                        <a href="#pangolin" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E12AQGniCbWy7Eo0w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1683659936527?e=2147483647&v=beta&t=lrdB0iXLWsSeuUY-pq_POL-h9FSiM-kwcYofOPU1WOg" alt="Saola" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Saola</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Unknown, Extremely Rare</p>
+                        <a href="#saola" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://files.worldwildlife.org/wwfcmsprod/images/Amur_Leopard_/story_full_width/9g51xqtsf1_amur_leopard_99144569.jpg" alt="Amur Leopard" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Amur Leopard</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Less than 100</p>
+                        <a href="#amur-leopard" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUWz_J7ysmwkMJRhgJS7yC2yg3j3aEVrV1w&s" alt="Javan Rhino" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Javan Rhino</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Around 75</p>
+                        <a href="#javan-rhino" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://cdn.britannica.com/81/65381-050-B34096B5/orangutan-branches-tree.jpg" alt="Bornean Orangutan" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Bornean Orangutan</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Around 104,700</p>
+                        <a href="#orangutan" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.takeshape.io/86ce9525-f5f2-4e97-81ba-54e8ce933da7/dev/d94526a1-4477-4ba4-956d-e9581b46ca7c/1280px-Gharial_(Gavialis_gangeticus)_female_head%20image%20credit%20Creative%20Commons%2C%20Charles%20J%20Sharp.jpeg?auto=compress%2Cformat&h=630&w=1200" alt="Gharial" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Gharial</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Less than 250 adults</p>
+                        <a href="#gharial" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="tiger" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">South China Tiger</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://tigers-world.com/wp-content/uploads/South_China_tiger.jpg" alt="South China Tiger Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Panthera tigris amoyensis</li>
+                            <li><strong>Population:</strong> Possibly Extinct in Wild</li>
+                            <li><strong>Habitat:</strong> South-central China</li>
+                            <li><strong>Threats:</strong> Habitat loss, historical hunting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rhino" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Sumatran Rhinoceros</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/03/28092209/277549834_7633132220038138_3823976378619502631_n-768x512.jpg" alt="Sumatran Rhinoceros Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Dicerorhinus sumatrensis</li>
+                            <li><strong>Population:</strong> Less than 80</li>
+                            <li><strong>Habitat:</strong> Tropical rainforests of Indonesia</li>
+                            <li><strong>Threats:</strong> Poaching, habitat loss, small population size</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vaquita" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Vaquita</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://earth.org/wp-content/uploads/2022/04/Untitled-design-2022-04-12T161151.368.jpg" alt="Vaquita Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Phocoena sinus</li>
+                            <li><strong>Population:</strong> Less than 20</li>
+                            <li><strong>Habitat:</strong> Northern Gulf of California</li>
+                            <li><strong>Threats:</strong> Illegal fishing practices, bycatch</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pangolin" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Chinese Pangolin</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://d1jyxxz9imt9yb.cloudfront.net/article/10883/meta_image/regular/_MG_7256_reduced.jpg" alt="Chinese Pangolin Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Manis pentadactyla</li>
+                            <li><strong>Population:</strong> Unknown, Rapidly Declining</li>
+                            <li><strong>Habitat:</strong> Northern and southern China, Taiwan, Myanmar, Vietnam</li>
+                            <li><strong>Threats:</strong> Poaching for meat and scales, habitat loss</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="saola" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Saola</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E12AQGniCbWy7Eo0w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1683659936527?e=2147483647&v=beta&t=lrdB0iXLWsSeuUY-pq_POL-h9FSiM-kwcYofOPU1WOg" alt="Saola Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Pseudoryx nghetinhensis</li>
+                            <li><strong>Population:</strong> Unknown, Extremely Rare</li>
+                            <li><strong>Habitat:</strong> Annamite Range of Laos and Vietnam</li>
+                            <li><strong>Threats:</strong> Hunting, habitat loss, snares set for other animals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="amur-leopard" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Amur Leopard</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://files.worldwildlife.org/wwfcmsprod/images/Amur_Leopard_/story_full_width/9g51xqtsf1_amur_leopard_99144569.jpg" alt="Amur Leopard Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Panthera pardus orientalis</li>
+                            <li><strong>Population:</strong> Less than 100</li>
+                            <li><strong>Habitat:</strong> Temperate forests of Far Eastern Russia and China</li>
+                            <li><strong>Threats:</strong> Poaching, habitat loss, inbreeding</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="javan-rhino" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Javan Rhino</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUWz_J7ysmwkMJRhgJS7yC2yg3j3aEVrV1w&s" alt="Javan Rhino Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Rhinoceros sondaicus</li>
+                            <li><strong>Population:</strong> Around 75</li>
+                            <li><strong>Habitat:</strong> Ujung Kulon National Park, Java, Indonesia</li>
+                            <li><strong>Threats:</strong> Poaching, small population size, natural disasters</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="orangutan" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Bornean Orangutan</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://cdn.britannica.com/81/65381-050-B34096B5/orangutan-branches-tree.jpg" alt="Bornean Orangutan Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Pongo pygmaeus</li>
+                            <li><strong>Population:</strong> Around 104,700</li>
+                            <li><strong>Habitat:</strong> Lowland rainforests of Borneo</li>
+                            <li><strong>Threats:</strong> Deforestation for palm oil, hunting, forest fires</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gharial" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Gharial</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://images.takeshape.io/86ce9525-f5f2-4e97-81ba-54e8ce933da7/dev/d94526a1-4477-4ba4-956d-e9581b46ca7c/1280px-Gharial_(Gavialis_gangeticus)_female_head%20image%20credit%20Creative%20Commons%2C%20Charles%20J%20Sharp.jpeg?auto=compress%2Cformat&h=630&w=1200" alt="Gharial Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Gavialis gangeticus</li>
+                            <li><strong>Population:</strong> Less than 250 adults</li>
+                            <li><strong>Habitat:</strong> Rivers of the Indian subcontinent</li>
+                            <li><strong>Threats:</strong> Habitat loss, fishing nets, sand mining, dams</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

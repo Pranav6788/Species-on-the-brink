@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>South America Endangered Species</title>
+</head>
+<body>
+    <div class="fixed p-3 flex w-full top-0 left-0 z-20">
+        <div class="justify-start">
+            <button class="text-gray-1000 py-4 px-5 shadow-large hover:bg-gray-900 hover:text-gray-300 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div id="menuBar" class="flex w-full">
+            <a href="main.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Home</a>
+            <a href="extinct.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Extinct</a>
+            <a href="map.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Explore</a>
+            <a href="blog.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Blog</a>
+            <a href="quiz.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Quiz</a>
+            <a href="donate.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Donate</a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="relative h-screen">
+            <img src="https://cdn.britannica.com/39/195439-050-FC58B661/Guanacos-Patagonia-Argentina.jpg" alt="South American Rainforest" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <h1 class="text-6xl font-bold text-white mb-4">South America's Most Endangered</h1>
+                <p class="text-2xl text-white">Discovering the continent's critically endangered species</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Amazonas-Flussdelfin_Orinoko3.jpg" alt="Amazon River Dolphin" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Amazon River Dolphin</h3>
+                        <p class="text-red-600 font-bold mb-2">Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Decreasing, exact numbers unknown</p>
+                        <a href="#dolphin" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://www.explorica.com/blog/wp-content/uploads/2020/06/Monkey1.jpg" alt="Golden Lion Tamarin" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Golden Lion Tamarin</h3>
+                        <p class="text-red-600 font-bold mb-2">Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: About 2,500</p>
+                        <a href="#tamarin" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://www.nashvillezoo.org/assets/2147/53196427799_a04a3fcbef_o.jpg?h=700&w=1250" alt="Andean Bear" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Andean Bear</h3>
+                        <p class="text-red-600 font-bold mb-2">Vulnerable</p>
+                        <p class="text-gray-600 mb-4">Population: Less than 18,000</p>
+                        <a href="#bear" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYjOz7uU5yXTjgIDUoEO2DvDafoNNh9GA-BA&s" alt="Blue-throated Macaw" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Blue-throated Macaw</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Less than 300 in wild</p>
+                        <a href="#macaw" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://c02.purpledshub.com/uploads/sites/62/2019/05/GettyImages-452419199-975bfd6.jpg" alt="Giant Otter" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Giant Otter</h3>
+                        <p class="text-red-600 font-bold mb-2">Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: 1,000-5,000 individuals</p>
+                        <a href="#otter" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://a-z-animals.com/media/2021/10/Zorro_de_Darwin-1.jpg" alt="Darwin's Fox" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Darwin's Fox</h3>
+                        <p class="text-red-600 font-bold mb-2">Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Fewer than 1,000 adults</p>
+                        <a href="#fox" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="dolphin" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Amazon River Dolphin</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Amazonas-Flussdelfin_Orinoko3.jpg" alt="Amazon River Dolphin Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Inia geoffrensis</li>
+                            <li><strong>Population:</strong> Decreasing, exact numbers unknown</li>
+                            <li><strong>Habitat:</strong> Rivers and lakes in the Amazon and Orinoco river basins</li>
+                            <li><strong>Threats:</strong> Dam construction, fishing bycatch, pollution, boat traffic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tamarin" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Golden Lion Tamarin</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://www.explorica.com/blog/wp-content/uploads/2020/06/Monkey1.jpg" alt="Golden Lion Tamarin Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Leontopithecus rosalia</li>
+                            <li><strong>Population:</strong> About 2,500</li>
+                            <li><strong>Habitat:</strong> Atlantic coastal forests of Brazil</li>
+                            <li><strong>Threats:</strong> Deforestation, habitat fragmentation, wildlife trade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bear" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Andean Bear</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://www.nashvillezoo.org/assets/2147/53196427799_a04a3fcbef_o.jpg?h=700&w=1250" alt="Andean Bear Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Tremarctos ornatus</li>
+                            <li><strong>Population:</strong> Less than 18,000</li>
+                            <li><strong>Habitat:</strong> Andean mountains from Venezuela to Bolivia</li>
+                            <li><strong>Threats:</strong> Habitat loss, hunting, human-wildlife conflict</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="macaw" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Blue-throated Macaw</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYjOz7uU5yXTjgIDUoEO2DvDafoNNh9GA-BA&s" alt="Blue-throated Macaw Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Ara glaucogularis</li>
+                            <li><strong>Population:</strong> Less than 300 in wild</li>
+                            <li><strong>Habitat:</strong> Northern Bolivia's savanna and palm swamps</li>
+                            <li><strong>Threats:</strong> Habitat loss, illegal pet trade, competition for nest sites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="otter" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Giant Otter</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://c02.purpledshub.com/uploads/sites/62/2019/05/GettyImages-452419199-975bfd6.jpg" alt="Giant Otter Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Pteronura brasiliensis</li>
+                            <li><strong>Population:</strong> 1,000-5,000 individuals</li>
+                            <li><strong>Habitat:</strong> Amazon, Orinoco, and La Plata river systems</li>
+                            <li><strong>Threats:</strong> Mining pollution, habitat destruction, hunting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fox" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Darwin's Fox</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://a-z-animals.com/media/2021/10/Zorro_de_Darwin-1.jpg" alt="Darwin's Fox Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Lycalopex fulvipes</li>
+                            <li><strong>Population:</strong> Fewer than 1,000 adults</li>
+                            <li><strong>Habitat:</strong> Temperate rainforests of Chile</li>
+                            <li><strong>Threats:</strong> Habitat loss, dogs (disease and predation), road kills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

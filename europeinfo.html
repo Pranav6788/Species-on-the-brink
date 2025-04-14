@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>European Endangered Species</title>
+</head>
+<body>
+    <div class="fixed p-3 flex w-full top-0 left-0 z-20">
+        <div class="justify-start">
+            <button class="text-gray-1000 py-4 px-5 shadow-large hover:bg-gray-900 hover:text-gray-300 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div id="menuBar" class="flex w-full">
+            <a href="main.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Home</a>
+            <a href="extinct.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Extinct</a>
+            <a href="map.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Explore</a>
+            <a href="./Blog/blog.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Blog</a>
+            <a href="quiz.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Quiz</a>
+            <a href="donate.html" class="flex text-2xl text-gray-1000 mx-10 px-4 pt-3 hover:bg-gray-900 hover:text-gray-300 rounded-full">Donate</a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="relative h-screen">
+            <img src="https://www.wildlifeworldwide.com/images/galleries/europe_uk_stag_in_scottish_highlands_gallery.jpg" alt="European Wildlife" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <h1 class="text-6xl font-bold text-white mb-4">Europe's Most Endangered</h1>
+                <p class="text-2xl text-white">Discovering the continent's critically endangered species</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://i.guim.co.uk/img/media/9cb888807f72607389a86eeff5fca5ec9e35e6d1/0_184_5472_3283/master/5472.jpg?width=1200&quality=85&auto=format&fit=max&s=a8ce7953e4d10c910de478a7a00aab08" alt="Iberian Lynx" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Iberian Lynx</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Around 1,100</p>
+                        <a href="#lynx" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://www.rcinet.ca/eye-on-the-arctic/wp-content/uploads/sites/30/2019/07/seal-e1562182526280.jpg" alt="Saimaa Ringed Seal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Saimaa Ringed Seal</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Less than 400</p>
+                        <a href="#seal" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://www.cms.int/sites/default/files/news_featured_image/Monk%20seal1_0.jpg" alt="Mediterranean Monk Seal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Mediterranean Monk Seal</h3>
+                        <p class="text-red-600 font-bold mb-2">Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: 700-800</p>
+                        <a href="#monk-seal" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://ranuaresort.com/wp-content/uploads/2023/05/20170620-_T4A7790-scaled.jpg" alt="European Mink" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">European Mink</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Less than 5,000</p>
+                        <a href="#mink" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Benny_Trapp_Pelophylax_cerigensis.jpg/1200px-Benny_Trapp_Pelophylax_cerigensis.jpg" alt="Karpathos Marsh Frog" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Karpathos Marsh Frog</h3>
+                        <p class="text-red-600 font-bold mb-2">Critically Endangered</p>
+                        <p class="text-gray-600 mb-4">Population: Unknown, very limited</p>
+                        <a href="#frog" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiumjMa_kGXN5_HsdN0Tq0b4F-cn78yMdnGw&s" alt="Pyrenean Desman" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Pyrenean Desman</h3>
+                        <p class="text-red-600 font-bold mb-2">Vulnerable</p>
+                        <p class="text-gray-600 mb-4">Population: Declining rapidly</p>
+                        <a href="#desman" class="text-blue-600 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="lynx" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Iberian Lynx</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://i.guim.co.uk/img/media/9cb888807f72607389a86eeff5fca5ec9e35e6d1/0_184_5472_3283/master/5472.jpg?width=1200&quality=85&auto=format&fit=max&s=a8ce7953e4d10c910de478a7a00aab08" alt="Iberian Lynx Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Lynx pardinus</li>
+                            <li><strong>Population:</strong> Around 1,100 (recovering)</li>
+                            <li><strong>Habitat:</strong> Mediterranean woodland in the Iberian Peninsula (Spain and Portugal)</li>
+                            <li><strong>Threats:</strong> Habitat fragmentation, decline of rabbit populations, road mortality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seal" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Saimaa Ringed Seal</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://www.rcinet.ca/eye-on-the-arctic/wp-content/uploads/sites/30/2019/07/seal-e1562182526280.jpg" alt="Saimaa Ringed Seal Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Pusa hispida saimensis</li>
+                            <li><strong>Population:</strong> Less than 400</li>
+                            <li><strong>Habitat:</strong> Lake Saimaa in Finland (only location)</li>
+                            <li><strong>Threats:</strong> Climate change affecting ice formation, fishing net entanglement, human disturbance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="monk-seal" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Mediterranean Monk Seal</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://www.cms.int/sites/default/files/news_featured_image/Monk%20seal1_0.jpg" alt="Mediterranean Monk Seal Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Monachus monachus</li>
+                            <li><strong>Population:</strong> 700-800</li>
+                            <li><strong>Habitat:</strong> Mediterranean Sea and Eastern Atlantic Ocean, particularly around Greece and Turkey</li>
+                            <li><strong>Threats:</strong> Habitat degradation, fishing interaction, pollution, human disturbance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mink" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">European Mink</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://ranuaresort.com/wp-content/uploads/2023/05/20170620-_T4A7790-scaled.jpg" alt="European Mink Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Mustela lutreola</li>
+                            <li><strong>Population:</strong> Less than 5,000</li>
+                            <li><strong>Habitat:</strong> Rivers and wetlands in parts of Spain, France, Romania, and Russia</li>
+                            <li><strong>Threats:</strong> Competition from American mink, habitat loss, hunting, water pollution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="frog" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Karpathos Marsh Frog</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Benny_Trapp_Pelophylax_cerigensis.jpg/1200px-Benny_Trapp_Pelophylax_cerigensis.jpg" alt="Karpathos Marsh Frog Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Pelophylax cerigensis</li>
+                            <li><strong>Population:</strong> Unknown, very limited</li>
+                            <li><strong>Habitat:</strong> Only found on the island of Karpathos, Greece</li>
+                            <li><strong>Threats:</strong> Water extraction, drought, climate change, tourism development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="desman" class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Pyrenean Desman</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiumjMa_kGXN5_HsdN0Tq0b4F-cn78yMdnGw&s" alt="Pyrenean Desman Detail" class="rounded-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Quick Facts</h3>
+                        <ul class="space-y-2">
+                            <li><strong>Scientific Name:</strong> Galemys pyrenaicus</li>
+                            <li><strong>Population:</strong> Declining rapidly</li>
+                            <li><strong>Habitat:</strong> Mountain streams in the Pyrenees (Spain, France, Portugal, Andorra)</li>
+                            <li><strong>Threats:</strong> Hydroelectric dams, water pollution, climate change, invasive species</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.submit-button {
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+}
+
+.display-res-h2 {
+    padding: 50px;
+    font-size: 50px;
+}
+
+.display-res-p {
+    padding-left: 50px;
+    font-size: 30px;
+}
+.display-res-a {
+    padding-left: 50px;
+    font-size: 30px;
+}
